@@ -1,4 +1,4 @@
-package org.example;
+package patterns.structural;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -8,6 +8,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.HashSet;
 
+/**
+ * proxy class which store cache and interacts with their
+ * @author Бобков Илья
+ */
 public class FileMethodsProxy implements FileMethods {
 
     private final FileMethods fileMethods = new FileMethodsImpl();
@@ -16,12 +20,24 @@ public class FileMethodsProxy implements FileMethods {
 
     private final Set<Path> modifiedFiles = new HashSet<>();
 
+    /**
+     * write new data to file
+     * @param pathFile file path with logs
+     * @param content content which need add to file
+     */
     @Override
     public void writeFile(Path pathFile, String content) {
         fileMethods.writeFile(pathFile, content);
         modifiedFiles.add(pathFile);
     }
 
+    /**
+     * reads data from the cache, if file has not been modified
+     * else reads data from file and adds file to the cache
+     * @param pathFile file path with logs
+     * @return string logs
+     * @throws IOException open/close exception
+     */
     @Override
     public List<String> readFile(Path pathFile) throws IOException {
 
@@ -39,7 +55,8 @@ public class FileMethodsProxy implements FileMethods {
         }
     }
 
-    public final Set<Path> getModified(){
+    public final Set<Path> getModified() {
         return modifiedFiles;
     }
+
 }
