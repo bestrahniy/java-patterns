@@ -1,4 +1,4 @@
 # java-patterns
 
 реализация паттернов:
-- fasade
+- observer
