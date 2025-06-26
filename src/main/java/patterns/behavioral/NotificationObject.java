@@ -1,11 +1,9 @@
-/**
- * Classes are presented to demonstrate the Observer pattern.
- */
-package org.example;
+package patterns.behavioral;
 
 /**
  * this interface for the observed object.
  * defines the contract for manage observer and notify they.
+ * @author Бобков Илья
  */
 public interface NotificationObject {
 

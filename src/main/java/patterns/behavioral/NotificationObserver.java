@@ -1,10 +1,8 @@
-/**
- * Classes are presented to demonstrate the Observer pattern.
- */
-package org.example;
+package patterns.behavioral;
 
 /**
  * interface that all users should implement.
+ * @author Бобков Илья
  */
 public interface NotificationObserver {
     /**

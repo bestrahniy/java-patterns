@@ -1,7 +1,4 @@
-/**
- * Classes are presented to demonstrate the Observer pattern.
- */
-package org.example;
+package patterns.behavioral;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,23 +6,14 @@ import java.util.List;
 /**
  * User class, which is observer.
  * get and store notifications.
+ * @author Бобков Илья
  */
 public class User implements NotificationObserver {
 
-    /**
-     * name of user.
-     */
     private String name;
 
-    /**
-     * list of notifications.
-     */
     private final List<String> notifications = new ArrayList<>();
 
-    /**
-     * Constructor for creating user.
-     * @param userName User name.
-     */
     public User(final String userName) {
         this.name = userName;
     }
@@ -48,10 +36,6 @@ public class User implements NotificationObserver {
         notifications.forEach(System.out::println);
     }
 
-    /**
-     * return list of all notifications.
-     * @return list of notification.
-     */
     public List<String> getNotification() {
         return notifications;
     }

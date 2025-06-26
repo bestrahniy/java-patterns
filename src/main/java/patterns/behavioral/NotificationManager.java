@@ -1,7 +1,4 @@
-/**
- * Classes are presented to demonstrate the Observer pattern.
- */
-package org.example;
+package patterns.behavioral;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,12 +6,10 @@ import java.util.List;
 /**
  * this is manager notification.
  * that manage the list of observer and notify them about new notifications.
+ * @author Бобков Илья
  */
 public class NotificationManager implements NotificationObject {
 
-    /**
-     * the list of observer.
-     */
     private final List<User> users = new ArrayList<>();
 
     /**
