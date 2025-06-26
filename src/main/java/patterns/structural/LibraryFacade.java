@@ -1,7 +1,4 @@
-/**
- * Classes are presented to demonstrate the facade pattern.
- */
-package org.example;
+package patterns.structural;
 
 import java.util.List;
 
@@ -13,34 +10,18 @@ import java.util.List;
  */
 public class LibraryFacade {
 
-    /**
-     * link to library.
-     */
     private Library library;
 
-    /**
-     * link to subsystem for search books.
-     */
     private SearchBook searchBook;
 
-    /**
-     * link to subsystem for borrow books.
-     */
     private SetBook setBook;
 
-    /**
-     * constructor for crating a new object.
-     */
     public LibraryFacade() {
         this.library = new Library();
         this.searchBook = new SearchBook(library);
         this.setBook = new SetBook(library);
     }
 
-    /**
-     * return list with all books.
-     * @return list of books.
-     */
     public List<String> getAllBooks() {
         return library.getBooks();
     }

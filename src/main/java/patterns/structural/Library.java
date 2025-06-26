@@ -1,7 +1,4 @@
-/**
- * Classes are presented to demonstrate the facade pattern.
- */
-package org.example;
+package patterns.structural;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,14 +11,8 @@ import java.util.List;
  */
 public class Library {
 
-    /**
-     * list of books.
-     */
     private List<String> books;
 
-    /**
-     * constructor for create a new object.
-     */
     public Library() {
         this.books = new ArrayList<>();
     }
@@ -49,4 +40,5 @@ public class Library {
     public List<String> getBooks() {
         return Collections.unmodifiableList(books);
     }
+
 }

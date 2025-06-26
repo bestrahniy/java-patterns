@@ -1,7 +1,4 @@
-/**
- * Classes are presented to demonstrate the facade pattern.
- */
-package org.example;
+package patterns.structural;
 
 /**
  * this is subsystem to borrow book by name.
@@ -9,15 +6,8 @@ package org.example;
  */
 public class SetBook {
 
-    /**
-     * link on class Library instance.
-     */
     private final Library library;
 
-    /**
-     * constructor for creating a new object.
-     * @param librar link on Library.
-     */
     public SetBook(final Library librar) {
         this.library = librar;
     }

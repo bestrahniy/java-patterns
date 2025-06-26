@@ -1,7 +1,4 @@
-/**
- * Classes are presented to demonstrate the facade pattern.
- */
-package org.example;
+package patterns.structural;
 
 /**
  * this is subsystem for search book by name.
@@ -9,15 +6,8 @@ package org.example;
  */
 public final class SearchBook {
 
-    /**
-     * link on class library instance.
-     */
     private final Library library;
 
-    /**
-     * constructor for creating a new object.
-     * @param librar library instance.
-     */
     public SearchBook(final Library librar) {
         this.library = librar;
     }
