@@ -1,4 +1,4 @@
-package org.example;
+package patterns.creational;
 
 /**
  * class that defines singleton pattern

@@ -1,5 +1,4 @@
-package org.example;
-
+package patterns.creational;
 
 import org.junit.jupiter.api.Test;
 import static junit.framework.Assert.assertTrue;
