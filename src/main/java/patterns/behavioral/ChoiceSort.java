@@ -1,4 +1,4 @@
-package org.example;
+package patterns.behavioral;
 
 /**
  * a specific strategy to sort arrays

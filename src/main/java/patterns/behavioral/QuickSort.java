@@ -1,4 +1,4 @@
-package org.example;
+package patterns.behavioral;
 
 import java.util.ArrayList;
 import java.util.List;

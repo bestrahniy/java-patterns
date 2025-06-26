@@ -1,4 +1,4 @@
-package org.example;
+package patterns.behavioral;
 
 /**
  * main class that defines which sort method use

@@ -1,4 +1,4 @@
-package org.example;
+package patterns.behavioral;
 
 /**
  * interface determines a contract for all methods
