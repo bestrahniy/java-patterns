@@ -1,8 +1,7 @@
-package org.example;
+package patterns.creational;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ConfigurationComputerTest {

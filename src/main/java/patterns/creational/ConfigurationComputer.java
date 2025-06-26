@@ -1,5 +1,9 @@
-package org.example;
+package patterns.creational;
 
+/**
+ * class defines a computer configuration
+ * @author Бобков Илья
+ */
 public final class ConfigurationComputer {
 
     private String processor;
@@ -36,6 +40,9 @@ public final class ConfigurationComputer {
         return videoCard;
     }
 
+    /**
+     * nested class Builder that implements builder pattern for configure computer
+     */
     public static class Builder {
 
         private String processor = "";
@@ -69,6 +76,10 @@ public final class ConfigurationComputer {
             return this;
         }
 
+        /**
+         * method creates new object with all specified properties
+         * @return new object
+         */
         public ConfigurationComputer build() {
             return new ConfigurationComputer(this);
         }
