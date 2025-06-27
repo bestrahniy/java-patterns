@@ -1,6 +1,7 @@
 # java-patterns
 
 реализация паттернов:
+- builder
 - singleton
 - builder
 - fasade
