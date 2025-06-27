@@ -1,4 +1,9 @@
 # java-patterns
-
 реализация паттернов:
-- strategy
+
+singleton
+builder
+fasade
+proxy
+observer
+strategy
