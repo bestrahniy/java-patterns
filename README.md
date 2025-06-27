@@ -1,9 +1,10 @@
 # java-patterns
-реализация паттернов:
 
-singleton
-builder
-fasade
-proxy
-observer
-strategy
+реализация паттернов:
+- builder
+- singleton
+- builder
+- fasade
+- proxy
+- observer
+- strategy
